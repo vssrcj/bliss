@@ -1,0 +1,78 @@
+.cont i {
+  color: #666;
+  position: absolute;
+  transition: color ease 0.5s;
+  position: fixed;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 20px;
+}
+.App {
+  padding: 20px;
+}
+input {
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  border-bottom: 1px solid #222;
+  color: #bbb;
+  padding: 8px;
+  padding-left: 26px;
+  transition: border-bottom ease 0.5s;
+  width: 400px;
+}
+input:focus {
+  border-bottom: 1px solid #666;
+  color: #ddd;
+}
+input:focus ~ i {
+  color: #ccc;
+}
+.cont {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+table {
+  color: #ccc;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 10px 10px 0;
+}
+table i {
+  color: transparent;
+}
+td {
+  padding: 7px 12px;
+  border-bottom: 1px solid #222;
+  box-sizing: border-box;
+}
+tr {
+  cursor: inherit;
+}
+tr:hover {
+  background-color: #222;
+}
+tr:hover i {
+  color: #444;
+}
+tr:hover td:nth-child(2), tr:hover td:nth-child(1) {
+  border-bottom: 1px solid #222;
+}
+td:nth-child(2) {
+  width: 20px;
+  border-bottom-color: transparent;
+  text-align: right;
+  color: #777;
+  font-size: 11px;
+}
+td:nth-child(1) {
+  width: 16px;
+  border-bottom-color: transparent;
+  padding-bottom: 3px;
+  cursor: pointer;
+  padding: 3px 0 0 5px;
+}
